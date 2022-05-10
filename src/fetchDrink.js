@@ -1,5 +1,8 @@
+import { showLoading } from './toggleLoading.js';
 // func fetching drinks from the server with the url as param
 const fetchDrinks = async (url) => {
+  // show the loading by removing the loading hide class that is places by default in the HTML
+  showLoading();
   // a try/catch block to make effective use of the url or to reject it
   try {
     // fetching data from a server {returns a promise}

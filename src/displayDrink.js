@@ -1,4 +1,5 @@
 import getElement from './getElement.js';
+import { hideLoading } from './toggleLoading.js';
 
 //a display drink func to show drinks dynamically on the web page the { drink } is there so as to access the data in the server
 const displayDrinks = ({ drinks }) => {
@@ -8,7 +9,8 @@ const displayDrinks = ({ drinks }) => {
 
   // checking to see if the drink from the server does exist
   if (!drinks) {
-    //  TODO!!!!! Hide Loading
+    // hide the loading when url or searched drink is not available by adding the hide loading class
+    hideLoading();
     // displaying an error message when it does not exist
     title.textContent = `Sorry, Cocktail does not exist`;
     // do not want to display rest drinks and error msg together
@@ -30,6 +32,8 @@ const displayDrinks = ({ drinks }) => {
         </a>`;
     })
     .join('');
+  // hide the loading when url or searched drink is not available by adding the hide loading class
+  hideLoading();
   // make the error message section be an empty string (blank)
   title.textContent = '';
   // dynamically insert the new drink func into the section center for the HTML
