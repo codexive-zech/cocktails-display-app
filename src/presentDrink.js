@@ -9,7 +9,6 @@ const presentDrinks = async (url) => {
   // console.log(data);
   // display the drinks available in the server via the url
   const section = await displayDrinks(data);
-  console.log(section);
 };
 
 export default presentDrinks;

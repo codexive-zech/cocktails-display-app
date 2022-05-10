@@ -1,4 +1,5 @@
 import presentDrinks from './src/presentDrink.js';
+import './src/searchForm.js';
 
 // URL the data is going to be fetching from
 const url = 'https://thecocktaildb.com/api/json/v1/1/search.php?s=a';
