@@ -14,7 +14,38 @@
   </head>
 
   <body>
-    <h1>drinks page</h1>
+    <!-- Search Form -->
+    <form class="search-form">
+      <h2>Cocktails API</h2>
+      <input
+        type="text"
+        name="drink"
+        placeholder="Search Your Favorite Cocktail"
+      />
+    </form>
+    <!-- End of Search Form -->
+    <!-- Cocktails Display section -->
+    <section class="section cocktails">
+      <!-- Loading Section -->
+      <article class="loading hide-loading">
+        <img src="./img/loading.gif" alt="Loading..." />
+      </article>
+      <!-- Loading Section -->
+      <!-- No Cocktail found msg -->
+      <h2 class="title"></h2>
+      <!-- End of No Cocktail found msg -->
+      <section class="section-center">
+        <!-- single cocktail -->
+        <a href="drink.html">
+          <article class="cocktail">
+            <img src="./img/cocktail.jpg" alt="" />
+            <h3>Martini</h3>
+          </article>
+        </a>
+        <!-- end of single cocktail -->
+      </section>
+    </section>
+    <!-- End of Cocktails Display section -->
     <script type="module" src="./app.js"></script>
   </body>
 </html>
